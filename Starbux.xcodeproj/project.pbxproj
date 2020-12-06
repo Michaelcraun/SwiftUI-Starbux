@@ -16,6 +16,13 @@
 		9B3531412467033300A36972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B35313F2467033300A36972 /* LaunchScreen.storyboard */; };
 		9B35314C2467033300A36972 /* StarbuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35314B2467033300A36972 /* StarbuxTests.swift */; };
 		9B3531572467033300A36972 /* StarbuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3531562467033300A36972 /* StarbuxUITests.swift */; };
+		9B3531662467050400A36972 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3531652467050400A36972 /* ColorExtension.swift */; };
+		9B35316A246705DE00A36972 /* BackSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B353169246705DE00A36972 /* BackSplash.swift */; };
+		9B35316C2467068400A36972 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35316B2467068400A36972 /* TopView.swift */; };
+		9B35316E246707B500A36972 /* TopCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35316D246707B500A36972 /* TopCard.swift */; };
+		9B35317024671A7900A36972 /* BottomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35316F24671A7900A36972 /* BottomCard.swift */; };
+		9B953161246721B900546659 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B953160246721B900546659 /* Food.swift */; };
+		9B953163246721ED00546659 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B953162246721ED00546659 /* FoodItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		9B3531522467033300A36972 /* StarbuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarbuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3531562467033300A36972 /* StarbuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbuxUITests.swift; sourceTree = "<group>"; };
 		9B3531582467033300A36972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3531652467050400A36972 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		9B353169246705DE00A36972 /* BackSplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSplash.swift; sourceTree = "<group>"; };
+		9B35316B2467068400A36972 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		9B35316D246707B500A36972 /* TopCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCard.swift; sourceTree = "<group>"; };
+		9B35316F24671A7900A36972 /* BottomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCard.swift; sourceTree = "<group>"; };
+		9B953160246721B900546659 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		9B953162246721ED00546659 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +115,11 @@
 		9B3531302467033100A36972 /* Starbux */ = {
 			isa = PBXGroup;
 			children = (
+				9B353168246705D000A36972 /* View */,
+				9B353167246705CA00A36972 /* Model */,
+				9B353164246704F100A36972 /* Extension */,
 				9B3531312467033100A36972 /* AppDelegate.swift */,
 				9B3531332467033100A36972 /* SceneDelegate.swift */,
-				9B3531382467033100A36972 /* ContentView.swift */,
 				9B35313A2467033300A36972 /* Assets.xcassets */,
 				9B35313F2467033300A36972 /* LaunchScreen.storyboard */,
 				9B3531422467033300A36972 /* Info.plist */,
@@ -137,6 +153,35 @@
 				9B3531582467033300A36972 /* Info.plist */,
 			);
 			path = StarbuxUITests;
+			sourceTree = "<group>";
+		};
+		9B353164246704F100A36972 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B3531652467050400A36972 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9B353167246705CA00A36972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B953160246721B900546659 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B353168246705D000A36972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B353169246705DE00A36972 /* BackSplash.swift */,
+				9B35316B2467068400A36972 /* TopView.swift */,
+				9B35316D246707B500A36972 /* TopCard.swift */,
+				9B35316F24671A7900A36972 /* BottomCard.swift */,
+				9B3531382467033100A36972 /* ContentView.swift */,
+				9B953162246721ED00546659 /* FoodItem.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +315,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B35316C2467068400A36972 /* TopView.swift in Sources */,
 				9B3531322467033100A36972 /* AppDelegate.swift in Sources */,
+				9B35317024671A7900A36972 /* BottomCard.swift in Sources */,
 				9B3531342467033100A36972 /* SceneDelegate.swift in Sources */,
 				9B3531392467033100A36972 /* ContentView.swift in Sources */,
+				9B35316A246705DE00A36972 /* BackSplash.swift in Sources */,
+				9B35316E246707B500A36972 /* TopCard.swift in Sources */,
+				9B953161246721B900546659 /* Food.swift in Sources */,
 				9B3531372467033100A36972 /* Starbux.xcdatamodeld in Sources */,
+				9B3531662467050400A36972 /* ColorExtension.swift in Sources */,
+				9B953163246721ED00546659 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
